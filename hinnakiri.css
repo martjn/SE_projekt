@@ -1,0 +1,22 @@
+
+
+/* stackoverflow */
+@keyframes animate {
+    0% { background-position: 0 0; }
+    100% { background-position: -1200px 0; }
+}
+
+.header_div {
+    background-image: url('images/pitsa_pilt.jpg');
+    height: 500px;
+    text-align: center;
+    animation-name: animate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.hinnakiri_header {
+    padding: 210px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+}
