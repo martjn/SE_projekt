@@ -11,8 +11,10 @@
     height: 500px;
     text-align: center;
     animation-name: animate;
-    animation-duration: 20s;
+    animation-duration: 18s;
     animation-iteration-count: infinite;
+    border-radius: 3%;
+    animation-timing-function: linear;
 }
 
 .hinnakiri_header {
