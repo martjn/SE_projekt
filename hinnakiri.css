@@ -22,3 +22,20 @@
     font-family: 'Roboto Slab', serif;
     font-size: 70px;
 }
+
+.pitsa-holder {
+    height: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pitsa-image {
+    margin-right: 50px;
+    float: left;
+}
+
+.pitsa-description {
+    margin-right: 200px;
+}
