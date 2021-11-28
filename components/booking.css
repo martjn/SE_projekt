@@ -1,0 +1,40 @@
+
+.booking {
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    right: 0%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.booking h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.booking-general-info {
+    padding: 10px;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: black 1px solid;
+}
+
+.booking-system {
+    margin: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

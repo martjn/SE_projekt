@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="components/navbar.js" type="text/javascript" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="components/map.css">
+    <link rel="stylesheet" href="broneering.css">
+    <link rel="stylesheet" href="components/booking.css">
+
+    <title>Pitsa Kuttide Pitsaresto</title>
+
+</head>
+
+<body>
+    <nav-bar></nav-bar>
+    <div class="background-cover">
+        <img src="images/booking_bg.jpg">
+        <div class="location">
+            <div class="location-content">
+                <h1>Asume kesklinnas</h1>
+                <p>Raekoja platsi juures võite kohata meie restoranist tulevaid meeldivaid aroome ning restorani välimus on pilkepüüdev. Tulge külla!</p>
+                    <button onclick="location.href='broneering.html#Broneeri'" class="standard-button" id="order-now-button">
+                            <span>Broneerima</span>
+                    </button>
+
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <div class="booking" id="Broneeri">
+            <div class="booking-general-info">
+                <h1>Broneerimine</h1>
+                <p>Oleme avatud</p>
+                <hr>
+                <p>Esmaspäeviti 9:00 - 21:00</p>
+                <p>Teisipäeviti 10:00 - 23:00</p>
+                <p>Komapäeviti 10:00 - 23:00</p>
+                <p>Neljapäeviti 10:00 - 23:00</p>
+                <p>Reedeti 9:00 - 21:00</p>
+                <p>Laupäeviti 11:00 - 20:00</p>
+            </div>
+            <div class="booking-system">
+                <div class="booking-title">
+                    <button id="next-month">
+                        &larr;
+                    </button>
+                    <h1 id="month">November</h1>
+                    <button id="previous-month">
+                        &rarr;
+                    </button>
+                </div>
+                <div class="booking-dates">
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="components/map.js" type="text/javascript" ></script>
+
+</body>
