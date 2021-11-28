@@ -20,7 +20,7 @@
                 <div class="content-block">
                     <div class="content-right">
                         <h1>Parimad maitsed Tartu kauneimast pitsarestoranist</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda iste pariatur rerum, ipsa cupiditate harum incidunt deserunt, nostrum perspiciatis enim aspernatur quasi maiores architecto odio. Soluta accusamus possimus dignissimos?</p>
+                        <p>Oleme tegutsenud peatselt üle aasta, igakuiselt teenindame üle 500 kliendi. Oleme selleks, et tuua Itaalia pitsa tõepäraselt lähemale kõigile!</p>
                         <button class="standard-button">
                             <span>Vaadake galeriid</span>
                         </button>
@@ -36,7 +36,7 @@
                 <div class="content-block">
                     <div class="content-right">
                         <h1>Loodud armastuse ja hoolega</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae, quam repudiandae pariatur ipsum sit est in dolorem optio nostrum, ipsa dolor possimus alias, autem saepe repellat sint minima harum.</p>
+                        <p>Meie kokad on parimad. Seda näitavad nad iga pitsa valmistamise juures. Meie toorained tulevad kohalikelt talunikelt ja palju maitseaineid kasvatame kohapeal. Leiame, et hea pitsa on värske pitsa.</p>
                         <button class="standard-button">
                             <span>Tutvuge hinnakirjaga</span>
                         </button>
@@ -53,7 +53,7 @@
                     <div class="content-right">
                         <h1>Broneerimine</h1>
                         <p>
-                            Asume Tartu kauneis kesklinnas
+                            Asume Tartu kauneis kesklinnas. Asume linna keskel, et oleksime kõigile lähedal. Soovite näha imeilust miljööd, mida meie restoran kesklinnas loob?
                         </p>
                         <button class="standard-button">
                             <span>Broneerige aeg</span>
@@ -70,7 +70,7 @@
         <div class="order-now">
             <div class="content-text">
                 <h1>Koju tellimine</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error quam laboriosam quia qui veritatis, inventore eos, eius ipsa reprehenderit ducimus ut quae! Beatae ex dolorem culpa autem aspernatur provident.</p>
+                <p>Meile on Teie mugavus ja nauding oluline, selleks pakkume ka võimalust meie imemaistvaid pitsasid ka nautida enda kodu mugavuste keskel. Garanteerime, et saate alati kätte ahjusoojad pitsad!</p>
                 <button class="standard-button" id="order-now-button">
                     <span>Telli kohe!</span>
                 </button>
@@ -86,27 +86,87 @@
 
     <div id="ordering" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <form>
-                <label for="">Aadress</label>
-                <input type="text">
+            <span id="close-order" class="close">&times;</span>
+            <form onsubmit=" return false;">
+                <label for="address">Aadress</label>
+                <input type="text" id="address">
 
-                <p>Koju toomise teenus</p>
-                    <input type="radio" name="order-service" id="wolt">
-                    <label for="wolt">Wolt</label>
+                <div class="home-deliver">
 
-                    <input type="radio" name="order-service" id="bolt">
-                    <label for="bolt">Bolt</label>
+                    <p>Koju toomise teenus</p>
+                    <div class="order-service">
+                        <div>
+                            <input type="radio" name="order-service" id="wolt" checked>
+                            <label for="wolt" class="wolt">Wolt</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="order-service" id="bolt">
+                            <label for="bolt" class="bolt">Bolt</label>
+                        </div>
+                    </div>
+                </div>
+
 
                 <p>Pitsad</p>
-                    <input type="checkbox" name="salaami">
-                    <label for="salaami">
-                        <img src="" alt="">
-                    </label>
+                <ul class="pizza-selection-list">
+                    <li>
+                      <input type="checkbox" id="pizza-select-salaami" />
+                        <label for="pizza-select-salaami" class="pizza-label">
+                            <div>
+                                <p>Salaami</p>
+                                <img src="images/Salaami.jpg" />
+                                <p>6€</p>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pizza-select-siciliana" />
+                        <label for="pizza-select-siciliana" class="pizza-label">
+                            <p>Siciliana</p>
+                            <img src="images/Siciliana.jpg" />
+                            <p>4.50€</p>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="pizza-select-margherita" />
+                        <label for="pizza-select-margherita" class="pizza-label">
+                            <p>Margherita</p>
+                            <img src="images/Margherita.jpg" />
+                            <p>7€</p>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="pizza-select-frutti" />
+                        <label for="pizza-select-frutti" class="pizza-label">
+                            <p>Frutti-di-mare</p>
+                            <img src="images/Frutti-di-mare.jpg" />
+                            <p>5€</p>
+                        </label>
+                      </li>
+                  </ul>
+
+                  <input type="submit" value="Telli" id="order-complete">
 
             </form>
         </div>
     </div>
+
+        <div id="order-success" class="modal">
+            <div class="modal-content">
+                <span id="close-success" class="close">&times;</span>
+                <h1>Tehing oli edukas!</h1>
+                <hr>
+                <div class="order-details">
+                    <p>Märgitud aadressile saabub teie pitsa</p>
+                    <p id="time-of-arrival"></p>
+                    <p>Teie pileti number on</p>
+                    <p id="ticket"></p>
+                </div>
+
+                <h2>Head isu!</h2>
+
+            </div>
+        </div>
     <script src="components/ordering.js" type="text/javascript"></script>
         
 </body>
