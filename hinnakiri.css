@@ -43,3 +43,12 @@
 .pitsa-description {
     margin-right: 200px;
 }
+
+h2 {
+    color: orangered;
+    margin-top: 10px;
+}
+
+body {
+    background-color: #ffdab3;
+}
