@@ -4,9 +4,127 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="galerii.css">
+    <script src="components/navbar.js" type="text/javascript" defer></script>
+    <script src="components/foot.js" type="text/javascript" defer></script>
+    <script src="components/gallery.js" type="text/javascript" defer></script>
+    <title>PKPR Galerii</title> 
 </head>
 <body>
-    
+    <nav-bar></nav-bar>
+    <div class="line"></div>
+    <div class="commentbox1">
+        <ul>
+            "Kui teil on aega ainult üheks restorani külastuseks Tartut külastades, siis olgu selleks Pitsakuttide Pitsarestoran!" 
+        </ul>
+        <ul class="ul-class1">
+            - John Doe, 2021
+        </ul>
+    </div>
+    <div class="commentbox2">
+        <ul>
+            "After quite a bit of rusing around Estonia, finding and hunting the best that the country has to offer in terms of food, nothing that preceded even comes close to what PkPR has to offer here, especially the Salami one... unmatched... 10/10 would recommend" 
+        </ul>
+        <ul class="ul-class2">
+            - Jane Doe, 2021
+        </ul>
+    </div>
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 12</div>
+                <img src="images/galerii/gal1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 12</div>
+                <img src="images/galerii/gal2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 12</div>
+                <img src="images/galerii/gal3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 12</div>
+                <img src="images/galerii/gal4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 12</div>
+                <img src="images/galerii/gal5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 12</div>
+                <img src="images/galerii/gal6.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">7 / 12</div>
+                <img src="images/galerii/gal7.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">8 / 12</div>
+                <img src="images/galerii/gal8.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">9 / 12</div>
+                <img src="images/galerii/gal9.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">10 / 12</div>
+                <img src="images/galerii/gal10.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">11 / 12</div>
+                <img src="images/galerii/gal11.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">12 / 12</div>
+                <img src="images/galerii/gal12.jpg" style="width:100%">
+        </div>
+
+
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+    <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/galerii/gal1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/galerii/gal2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/galerii/gal3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal7.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal8.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal9.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal10.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal11.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
+        </div> 
+        <div class="column">
+            <img class="demo cursor" src="images/galerii/gal12.jpg" style="width:100%" onclick="currentSlide(12)" alt="">
+        </div> 
 </body>
 </html>
