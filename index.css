@@ -91,6 +91,12 @@ li:nth-child(even) {
     border-radius: 1%;
 
 }
+
+.standard-button a {
+    color: white;
+    text-decoration: none; /* no underline */
+}
+
 .standard-button {
     display: inline-block;
     border-radius: 4px;

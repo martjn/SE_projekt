@@ -6,7 +6,7 @@ class Navbar extends HTMLElement {
         this.gallery = "galerii.html"
         this.prices = "hinnakiri.html"
         this.landing_page = "index.html"
-        this.booking = "booking.html"
+        this.booking = "broneering.html"
         this.pizzas = [
             {name: "Salaami"},
             {name: "Margherita"},
