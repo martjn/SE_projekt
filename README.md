@@ -66,6 +66,16 @@ CSS faile oleme kasutanud 1 + 4 + 5 ehk:
     - `map.css` on vajalik ainult kaardi kuvamise jaoks, see määrab kaardi suuruse vastava _parent_ elemendi sees
 
 
+### Pildid
+---
+Pildid on võetud valdavalt pexels.com leheküljelt ja Google otsingu mootorist.
+
+Need asuvad kaustas `images/`.
+
+Nende hulgas on ka favicon
+
+
+
 
 ## Lehe spetsiifika e. funktsionaalsus
 ---
