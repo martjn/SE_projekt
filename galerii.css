@@ -23,15 +23,38 @@ html, body {
     }
 }
 
-.line{
+.line1{
 width: 1900px;
 height: 150px;
 border-bottom: 3px solid rgb(161, 161, 161);
 position: absolute;
+}
+.line2{
+width: 1900px;
+height: 150px;
+border-bottom: 3px solid rgb(161, 161, 161);
+position: absolute;
+margin-top:-200px;
+}
+.headline1{
+    position:absolute;
+    font-size:48px;
+    font-weight:1500;
+    padding-left:720px;
+    padding-top:50px;
+}
+.headline2{
+    position:absolute;
+    font-size:48px;
+    font-weight:1500;
+    padding-top:-200px;
+    padding-left:75px;
+    margin-top:-140px;
 
 }
 .commentbox1 {
     font-family: 'Roboto Slab';
+    font-size:18px;
     font-weight: 900;
     text-align: center;
     padding-top: 10px;
@@ -49,12 +72,13 @@ position: absolute;
 }
 .commentbox2 {
     font-family: 'Roboto Slab';
+    font-size:18px;
     font-weight: 900;
     text-align: center;
     padding-top: 10px;
     margin-bottom: 10%;
-    margin-top: 10%;
-    margin-left: 25%;
+    margin-top: -5%;
+    margin-left: 45%;
     width: 50%;
     height: 15%;
     position: relative;
@@ -108,7 +132,7 @@ img {
     top: 150%;
     width: auto;
     padding: 64px;
-    margin-top: -100px;
+    margin-top: -250px;
     color: white;
     font-weight: bold;
     font-size: 20px;
