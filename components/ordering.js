@@ -1,3 +1,4 @@
+
 var modalOrder = document.getElementById("ordering");
 var buttonOrder = document.getElementById("order-now-button");
 var spanOrder = document.getElementById("close-order");
@@ -20,7 +21,6 @@ spanSuccess.onclick = function() {
 }
 
 window.onclick = function(event) {
-    console.log(event.target)
   if (event.target == modalOrder) {
     modalOrder.style.display = "none";
   }
@@ -40,16 +40,17 @@ orderFinish.onclick = function() {
     const ticketId = [0, 0, 0, 0, 0, 0].map(_ => {
         return getRandomInt(9);
     }).join("");
-    console.log
     ticketObj.innerHTML = ticketId;
 
 }
 
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
 
 function addMinutes(date, minutes) {
     return new Date(date.getTime() + minutes*60000);
 }
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+

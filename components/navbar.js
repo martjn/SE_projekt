@@ -11,7 +11,11 @@ class Navbar extends HTMLElement {
             {name: "Salaami"},
             {name: "Margherita"},
             {name: "Frutti di Mare"},
-            {name: "Siciliana"}
+            {name: "Siciliana"},
+            {name: "Mafioso"},
+            {name: "Francescana"},
+            {name: "Vege"},
+            {name: "Al Tonno"},
         ]
     }
 

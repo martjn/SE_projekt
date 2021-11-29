@@ -1,4 +1,9 @@
 
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
 .booking {
     position: absolute;
     z-index: 1;
@@ -12,10 +17,6 @@
     padding: 20px;
 }
 
-.booking h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-}
 
 .booking-general-info {
     padding: 10px;
@@ -38,3 +39,67 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.month-button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1rem 2rem;
+	margin: 0;
+	font-family: inherit;
+	font-size: 2em;
+	position: relative;
+	display: inline-block;
+}
+
+.month-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.booking-dates {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1%;
+
+}
+
+.date button{
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1rem 2rem;
+	margin: 2px;
+	font-family: inherit;
+	font-size: 1em;
+	position: relative;
+	display: inline-block;
+    width: 200px;
+    height: 80px;
+}
+
+.date button:hover span{
+    display: none;
+}
+
+.date button:hover:before {
+    content:"Broneeri!"
+}
+
+.booked button {
+	pointer-events: none;
+	cursor: none;
+	background: #04aa6d;
+	border: none;
+	padding: 1rem 2rem;
+	margin: 2px;
+	font-family: inherit;
+	font-size: 1em;
+	position: relative;
+	display: inline-block;
+    width: 200px;
+    height: 80px;
+}
+
